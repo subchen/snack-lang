@@ -7,7 +7,7 @@
 that can be used in the browser or on node.js
 
 
-# Install
+# Installation
 
 ```shell
 npm install snack-lang
@@ -23,41 +23,14 @@ console.log(snack.number.format(12345.6789, 2));
 
 # APIs
 
-* addEnd
-* addStart
-* after
-* afterLast
-* before
-* beforeLast
-* between
-* camelize
-* capitalize
-* classify
-* contains
-* dasherize
-* decapitalize
-* endsWith
-* escapeHTML
-* hashCode
-* interpolate
-* isBlank
-* isEmpty
-* lines
-* pad
-* padLeft
-* padRight
-* removeChars
-* removeEnd
-* removeStart
-* repeat
-* slugify
-* startsWith
-* toCharArray
-* toString
-* template
-* truncate
-* unescapeHTML
-
+* object
+* number
+* array
+* date
+* function
+* regexp
+* text
+* type
 
 # License
 
