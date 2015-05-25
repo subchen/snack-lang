@@ -1,0 +1,53 @@
+{
+  "name": "snack-lang",
+  "version": "1.0.0",
+  "description": "Generic functional library for javascript/node.js",
+  "author": {
+    "name": "Guoqiang Chen",
+    "email": "subchen@gmail.com",
+    "url": "https://github.com/subchen"
+  },
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/subchen/snack-lang.git"
+  },
+  "bugs": {
+    "url": "https://github.com/subchen/snack-lang/issues"
+  },
+  "keywords": [
+    "snack",
+    "lang",
+    "util",
+    "stdlib",
+    "common"
+  ],
+  "dependencies": {
+    "snack-string": "^1.1.0"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-jsbeautifier": "^0.2.10",
+    "grunt-jscs": "^1.6.0",
+    "grunt-trimtrailingspaces": "^1.1.0",
+    "mocha": "^2.2.4",
+    "mocha-lcov-reporter": "0.0.2",
+    "istanbul": "^0.3.13",
+    "coveralls": "^2.11.2"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "pretest": "grunt sa",
+    "test": "mocha",
+    "test-cc": "istanbul cover _mocha -- --reporter mocha-lcov-reporter",
+    "test-cc-post": "cat ./coverage/lcov.info | coveralls"
+  }
+}
