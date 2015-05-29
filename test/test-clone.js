@@ -2,7 +2,7 @@ var assert = require('chai').assert;
 var clone = require('../lib/object/clone');
 
 /* jshint mocha: true */
-describe('clone', function() {
+describe('object.clone', function() {
 
     it('clone undefined/null', function() {
         assert.strictEqual(clone(undefined), undefined);
