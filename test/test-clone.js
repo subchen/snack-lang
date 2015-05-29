@@ -88,4 +88,16 @@ describe('clone', function() {
         assert.strictEqual(c.x3, a.x3);
         assert.strictEqual(c.x4, a.x4);
     });
+    
+    it('clone object with constructor', function() {
+        function A() {
+            this.a = 1;
+        }
+
+        var a = new A();
+        var b = clone(a);
+        assert.deepEqual(b, a);
+        assert.strictEqual(b instanceof A, true);
+        assert.strictEqual(b.a, 1);
+    });
 });
